@@ -49,9 +49,8 @@ const Products = () => {
         setPrice(product.price)
         setDesc(product.desc)
     }
+    
     const updateProduct = async () => {
-
-
         const data = {
             name,
             price,
@@ -63,11 +62,7 @@ const Products = () => {
         });
         alert("Product Successfully Updated");
         setShowAddProduct(false);
-
     }
-
-
-
 
     return (
         <>
@@ -135,7 +130,6 @@ const Products = () => {
                                 <button onClick={() => deleteProduct(product.id)} className="btn btn-danger mx-1" >Delete</button>
                                 <button onClick={() => showHideUpdate(product)} className="btn btn-warning" >Update</button>
                             </div>
-
                         })
                     }
                 </div>
