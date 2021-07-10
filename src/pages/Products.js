@@ -49,7 +49,7 @@ const Products = () => {
         setPrice(product.price)
         setDesc(product.desc)
     }
-    
+
     const updateProduct = async () => {
         const data = {
             name,
@@ -70,7 +70,7 @@ const Products = () => {
             <div className="container">
                 <div style={{ display: 'flex', justifyContent: 'space-around' }} className="my-3" >
                     <h2>Product List</h2>
-                    <button style= {showAddProduct ? { backgroundColor:'transparent',color:'red',border:'none'} : {}} className={showAddProduct ? "btn-outline-dark" : "btn btn-primary btn-sm" }  onClick={() => {
+                    <button style={showAddProduct ? { backgroundColor: 'transparent', color: 'red', border: 'none' } : {}} className={showAddProduct ? "btn-outline-dark" : "btn btn-primary btn-sm"} onClick={() => {
                         setShowAddProduct(!showAddProduct);
                         setShowAddUpdateButton(false)
                     }

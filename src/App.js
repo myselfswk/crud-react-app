@@ -1,7 +1,8 @@
+import React from 'react';
 import Products from "./pages/Products";
 
 function App() {
-  return(
+  return (
     <>
       <Products />
     </>
